@@ -1,0 +1,10 @@
+[general]
+;
+[globals]
+
+[default]
+exten => 1,1,WaitExten(10)
+
+exten => _1.,1,Dial(SIP/${EXTEN},20,tT)
+exten => 33,1,Dial(SIP/${EXTEN},20,tT)
+exten => _5.,1,Dial(SIP/${EXTEN},20,tT)
